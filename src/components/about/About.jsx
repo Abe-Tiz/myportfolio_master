@@ -47,16 +47,15 @@ const About = () => {
             </article>
           </div>
           <p>
-            I am a<b>MERN Stack Developer</b> with expertise in a diverse range
-            ofprogramming languages and tools. I ensure seamless integration
+            I am a <b>Mern Stack Developer</b> with expertise in a diverse range
+            of programming languages and tools. I ensure seamless integration
             from backend to frontend. My excellent communication skills are
             well-known,facilitating effective team collaboration and project
-            success. I am eager toapply my systematic and detail-oriented
+            success. I am eager to apply my systematic and detail-oriented
             approach to new challenges.With hands-on experience gained from
-            internships at Moneta TechnologySolutions and Addis Ababa
-            University’s Digital Library, I bring practicalknowledge to the
-            table. As an avid reader and tech enthusiast, I amconstantly
-            exploring new advancements in programming, eager tocontribute to and
+            internships Addis Ababa University’s Digital Library,Prodigy InfoTech  and FinServ Technology Solution , I bring practicalknowledge to the
+            table. As an avid reader and tech enthusiast, I am constantly
+            exploring new advancements in programming, I am eager to contribute to and
             grow with your team.
           </p>
         </div>
