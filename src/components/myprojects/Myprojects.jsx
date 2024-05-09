@@ -8,6 +8,7 @@ import IMG5 from "../../assets/resweb2.PNG";
 import IMG6 from "../../assets/news_img.PNG";
 import IMG7 from "../../assets/chat_img.jpg";
 import IMG8 from "../../assets/login_regiter.PNG";
+import IMG9 from "../../assets/pro-img-5.PNG";
 
 const Myprojects = () => {
   return (
@@ -157,7 +158,7 @@ const Myprojects = () => {
 
         <article className="portfolio__item">
           <div className="portfolio__item-image">
-            <img src={IMG5} alt="" />
+            <img src={IMG9} alt="" />
           </div>
           <h3>Mern Stack Food Delivery</h3>
           <small className="text-light">

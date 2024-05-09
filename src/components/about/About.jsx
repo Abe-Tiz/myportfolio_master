@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import myImage from '../../assets/my-image2.jpg'
+import myImage from '../../assets/me-image.png'
 import {GiGraduateCap} from 'react-icons/gi'
 import {BsBookmarkStar} from 'react-icons/bs'
 import {TfiWorld} from 'react-icons/tfi'
