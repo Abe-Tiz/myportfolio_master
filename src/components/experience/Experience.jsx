@@ -1,59 +1,30 @@
 import React from 'react'
 import './experience.css'
-import {BsFillPatchCheckFill} from 'react-icons/bs'
+import FrontEnd from './data';
+import BackEnd from './backend';
+import Mobile from './mobile';
+import Networking from './network';
 
 const Experience = () => {
   return (
     <section id="experience">
       <h5>The skills I have</h5>
-      <h2>My Experience</h2>
+      <h2>My Skills</h2>
 
       <div className="container experience__container">
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
 
           <div className="experience__content">
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>CSS</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Tailwind</h4>
-                <small className="text-light">Beginner</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>ReactJs</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-            
+            {FrontEnd.map((data) => (
+              <article key={data.id} className="experience__details">
+                {data.icon}
+                <div>
+                  <h4>{data.title}</h4>
+                  <small className="text-light">{data.lebel}</small>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
         {/* End of frontend part */}
@@ -61,46 +32,45 @@ const Experience = () => {
         <div className="experience__backend">
           <h3>Backend Development</h3>
           <div className="experience__content">
+            {BackEnd.map((data) => (
+              <article key={data.id} className="experience__details">
+                {data.icon}
+                <div>
+                  <h4>{data.title}</h4>
+                  <small className="text-light">{data.lebel}</small>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
 
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Node Js</h4>
-                <small className="text-light">Beginner</small>
-              </div>
-            </article>
+        <div className="experience__backend">
+          <h3>Mobile App Development</h3>
+          <div className="experience__content">
+            {Mobile.map((data) => (
+              <article key={data.id} className="experience__details">
+                {data.icon}
+                <div>
+                  <h4>{data.title}</h4>
+                  <small className="text-light">{data.lebel}</small>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
 
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>MySQL</h4>
-                <small className="text-light">Beginner</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>NoSQL</h4>
-                <small className="text-light">Beginner</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Express Js</h4>
-                <small className="text-light">Beginner</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Php</h4>
-                <small className="text-light">Beginner</small>
-              </div>
-            </article>
+        <div className="experience__backend">
+          <h3>Computer Network </h3>
+          <div className="experience__content">
+            {Networking.map((data) => (
+              <article key={data.id} className="experience__details">
+                {data.icon}
+                <div>
+                  <h4>{data.title}</h4>
+                  <small className="text-light">{data.lebel}</small>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </div>

@@ -54,7 +54,7 @@ const Nav = () => {
           onClick={() => setActiveNav("#experience")}
           className={activeNav === "#experience" ? "active" : ""}
         >
-          Experience
+          Skill
         </a>
         <a
           href="#myprojects"
