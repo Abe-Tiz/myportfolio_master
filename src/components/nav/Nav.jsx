@@ -28,7 +28,7 @@ const Nav = () => {
   return (
     <nav className={`container ${isSticky ? " sticky" : ""}`}>
       <a href="#home" className="logo">
-        <img src={logo} alt="logo-image" />
+        <img src={logo} alt="logo-image logo" />
       </a>
       <button className="toggler" onClick={() => setShowNav(!showNav)}>
         {showNav ? <AiOutlineClose /> : <AiOutlineMenu />}

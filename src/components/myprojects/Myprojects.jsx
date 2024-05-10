@@ -20,7 +20,7 @@ const Myprojects = () => {
             className={`portfolio__item ${index >= 3 ? "fade-in" : ""}`}
           >
             <div className="portfolio__item-image">
-              <img src={data.image} alt="image-pro" />
+              <img src={data.image} alt="image-project" />
             </div>
             <h3>{data.title}</h3>
             <small className="text-light">{data.tech}</small>
@@ -49,7 +49,7 @@ const Myprojects = () => {
       </div>
 
       {Data.length > 3 && (
-        <a onClick={toggleProjects} className="btn project__more">
+        <a href="#"  onClick={toggleProjects} className="btn project__more">
           {showAllProjects ? "Show Less" : "Show More"}
         </a>
       )}
