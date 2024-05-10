@@ -2,20 +2,83 @@ import React from 'react'
 import './contacts.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import { useRef } from 'react';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
+import toast from "react-hot-toast";
 
 const Contacts = () => {
-
   const form = useRef()
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  //   emailjs.sendForm('service_kpzxgqz', 'template_kk9ipl8', form.current, 'uKELRhBOpArKOozDJ')
-  //   e.target.reset()
-    
-  // }
+    try {
+      // Show loading toast
+      toast("Sending Email...", {
+        duration: 2000,
+        position: "top-center",
+        icon: "⏳",
+        ariaProps: {
+          role: "status",
+          "aria-live": "polite",
+        },
+        theme: {
+          loading: {
+            primary: "green",
+            secondary: "yellow",
+          },
+        },
+      });
 
+      emailjs
+        .sendForm(
+          "service_u93l038",
+          "template_4grnx28",
+          form.current,
+          "qOflpMzk_ImuzmC8e"
+        )
+        .then(
+          () => {
+            // Show success toast
+            toast("Email Sent Successfully!", {
+              duration: 4000,
+              position: "top-center",
+              icon: "👏",
+              ariaProps: {
+                role: "status",
+                "aria-live": "polite",
+              },
+              theme: {
+                success: {
+                  primary: "white",
+                  secondary: "blue",
+                },
+              },
+            });
+
+            e.target.reset();
+          },
+      );
+    } catch (error) {
+      // Show error toast
+      toast(`Failed to Send Email. Please try again. ${error}`, {
+        duration: 4000,
+        position: "top-center",
+        icon: "❌",
+        ariaProps: {
+          role: "status",
+          "aria-live": "polite",
+        },
+        theme: {
+          error: {
+            primary: "red",
+            secondary: "white",
+          },
+        },
+      });
+    }
+   
+  };
+ 
   return (
     <section id="contacts">
       <h5>Get in touch</h5>
@@ -31,10 +94,10 @@ const Contacts = () => {
           </article>
         </div>
 
-        <form ref={form}>
+        <form ref={form} onSubmit={handleSubmit}>
           <input
             type="text"
-            name="name"
+            name="user__name"
             placeholder="Your Full Name"
             required
           />{" "}
