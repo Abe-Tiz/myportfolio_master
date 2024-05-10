@@ -31,33 +31,31 @@ const Contacts = () => {
 
       emailjs
         .sendForm(
-          "service_u93l038",
-          "template_4grnx28",
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPELTE_ID,
           form.current,
-          "qOflpMzk_ImuzmC8e"
+          process.env.REACT_APP_EMAILJS_PUBLIC_KEY
         )
-        .then(
-          () => {
-            // Show success toast
-            toast("Email Sent Successfully!", {
-              duration: 4000,
-              position: "top-center",
-              icon: "👏",
-              ariaProps: {
-                role: "status",
-                "aria-live": "polite",
+        .then(() => {
+          // Show success toast
+          toast("Email Sent Successfully!", {
+            duration: 4000,
+            position: "top-center",
+            icon: "👏",
+            ariaProps: {
+              role: "status",
+              "aria-live": "polite",
+            },
+            theme: {
+              success: {
+                primary: "white",
+                secondary: "blue",
               },
-              theme: {
-                success: {
-                  primary: "white",
-                  secondary: "blue",
-                },
-              },
-            });
+            },
+          });
 
-            e.target.reset();
-          },
-      );
+          e.target.reset();
+        });
     } catch (error) {
       // Show error toast
       toast(`Failed to Send Email. Please try again. ${error}`, {
