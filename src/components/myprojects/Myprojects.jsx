@@ -20,7 +20,7 @@ const Myprojects = () => {
             className={`portfolio__item ${index >= 3 ? "fade-in" : ""}`}
           >
             <div className="portfolio__item-image">
-              <img src={data.image} alt="" />
+              <img src={data.image} alt="image-pro" />
             </div>
             <h3>{data.title}</h3>
             <small className="text-light">{data.tech}</small>

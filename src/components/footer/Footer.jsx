@@ -3,15 +3,14 @@ import './footer.css'
 import logo from "../../assets/logo.png";
 import {BsLinkedin, BsTelegram} from 'react-icons/bs'
 import {BsGithub} from 'react-icons/bs'
-// import {BsMedium} from 'react-icons/bs'
+ 
 
 const Footer = () => {
   return (
     <footer>
       <a href="#home" className="footer__logo">
-        <img src={logo} alt="logo-image" />
+        <img src={logo} alt="logo" />
       </a>
-      {/* <a href="#home" className="logo"></a> */}
       <ul className="permalinks">
         <li>
           <a href="#home">Home</a>
