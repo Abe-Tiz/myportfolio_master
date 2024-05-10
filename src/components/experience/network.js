@@ -16,14 +16,14 @@ const Networking = [
   {
     id: 3,
     icon: <BsFillPatchCheckFill className="experience__details-icon" />,
-    title: "Medium",
+    title: "Subnetting",
     lebel: "Intermediat",
   },
   {
     id: 4,
     icon: <BsFillPatchCheckFill className="experience__details-icon" />,
-    title: "And Others",
-    lebel: "Other Fundamentals of Computer Networks",
+    title: "And Other Fundamentals of Computer Networks",
+    lebel: "",
   },
 ];
 

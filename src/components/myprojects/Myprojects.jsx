@@ -14,7 +14,7 @@ const Myprojects = () => {
       <h5>My Recent Works</h5>
       <h2>Projects</h2>
       <div className="container portfolio__container">
-        {Data.slice(0, showAllProjects ? Data.length : 3).map((data,index) => (
+        {Data.slice(0, showAllProjects ? Data.length : 3).map((data, index) => (
           <article
             key={index}
             className={`portfolio__item ${index >= 3 ? "fade-in" : ""}`}
@@ -46,12 +46,13 @@ const Myprojects = () => {
             </div>
           </article>
         ))}
-        {Data.length > 3 && (
-          <a onClick={toggleProjects} className="btn project__more">
-            {showAllProjects ? "Show Less" : "Show More"}
-          </a>
-        )}
       </div>
+
+      {Data.length > 3 && (
+        <a onClick={toggleProjects} className="btn project__more">
+          {showAllProjects ? "Show Less" : "Show More"}
+        </a>
+      )}
     </section>
   );
 };

@@ -7,6 +7,7 @@ import IMG6 from "../../assets/news_img.PNG";
 import IMG7 from "../../assets/chat_img.jpg";
 import IMG8 from "../../assets/login_regiter.PNG";
 import IMG9 from "../../assets/pro-img-5.PNG";
+import IMG10 from "../../assets/myres.PNG";
 
 const Data = [
   {
@@ -86,6 +87,16 @@ const Data = [
     tech: " MongoDb | Express | React | Node js",
     source: "https://github.com/Abe-Tiz/food_deliver",
     btnName: "Github",
+  },
+  {
+    id: 9,
+    image: IMG10,
+    title: "My Resume",
+    tech: " HTML | CSS | JS ",
+    source: "https://github.com/Abe-Tiz/my-resume",
+    btnName: "Github",
+    link: "https://abiye-resume.netlify.app/",
+    linkName: "Visit",
   },
 ];
 

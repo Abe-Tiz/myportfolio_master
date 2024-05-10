@@ -12,14 +12,12 @@
 }
 
 .portfolio__container{
-
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2.5rem;
 }
 
 .portfolio__item{
-
     background: var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 2rem;
@@ -29,17 +27,16 @@
 }
 
 .project__more{
-    margin-left: 100%;
+    margin-left: 50%;
+    margin-top: 30px;
 }
 
 .portfolio__item:hover{
-
     border-color: var(--color-primary-variant);
     background: transparent;
 }
 
 .portfolio__item-image{
-
     border-radius: 1.5rem;
     overflow: hidden;
     width:235px;
@@ -47,12 +44,10 @@
 }
 
 .portfolio__item h3{
-
     margin: 1.2rem 0 .5rem;
 }
 
 .portfolio__item-cta{
-
     display: flex;
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -60,7 +55,6 @@
 }
 
 /* Media queries for medium devices(Tablets) */
-
 @media screen and (max-width: 1024px) {
 
     .portfolio__container{
