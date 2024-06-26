@@ -60,7 +60,7 @@ const Experience = () => {
         </div>
 
         <div className="experience__backend">
-          <h3>Computer Network </h3>
+          <h3>Computer Networks and System Analysis and Development</h3>
           <div className="experience__content">
             {Networking.map((data) => (
               <article key={data.id} className="experience__details">

@@ -2,8 +2,9 @@ import React from 'react'
 import './about.css'
 import myImage from '../../assets/me-image.png'
 import {GiGraduateCap} from 'react-icons/gi'
-import {BsBookmarkStar} from 'react-icons/bs'
+import {BsBookmarkStar, BsFillPatchCheckFill} from 'react-icons/bs'
 import {TfiWorld} from 'react-icons/tfi'
+// import { BsFillPatchCheckFill } from 'react-icons/bs';
 
 const About = () => {
   return (
@@ -31,8 +32,8 @@ const About = () => {
 
             <article className="about__card">
               <BsBookmarkStar className="about__icon" />
-              <h5>Current CGPA</h5>
-              <small>3.63</small>
+              <h5> Projects</h5>
+              <small>12+</small>
             </article>
 
             <article className="about__card">
@@ -40,23 +41,58 @@ const About = () => {
               <h5>Domains</h5>
               <small>
                 <ul>
-                  <li>System Analysis and Development, </li>
-                  <li>Web Development</li>
+                  <li>
+                    <BsFillPatchCheckFill className="experience__details-icon" />{" "}
+                    System Analysis and Development ,{" "}
+                  </li>
+                  <li>
+                    <BsFillPatchCheckFill className="experience__details-icon" />{" "}
+                    Web Development
+                    <span
+                      style={{
+                        color: "var(--color-primary)",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      ( Frontend || MERN Stack)
+                    </span>
+                  </li>
+                  <li>
+                    <BsFillPatchCheckFill className="experience__details-icon" />{" "}
+                    Mobile App Development{" "}
+                    <span
+                      style={{
+                        color: "var(--color-primary)",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      ( React Native )
+                    </span>{" "}
+                  </li>
                 </ul>
               </small>
             </article>
           </div>
           <p>
-            I am a <b>Mern Stack Developer</b> with expertise in a diverse range
-            of programming languages and tools. I ensure seamless integration
-            from backend to frontend. My excellent communication skills are
-            well-known,facilitating effective team collaboration and project
-            success. I am eager to apply my systematic and detail-oriented
-            approach to new challenges.With hands-on experience gained from
-            internships Addis Ababa University’s Digital Library,Prodigy InfoTech  and FinServ Technology Solution , I bring practicalknowledge to the
-            table. As an avid reader and tech enthusiast, I am constantly
-            exploring new advancements in programming, I am eager to contribute to and
-            grow with your team.
+            Hello! I'm a frontend developer with internship experience. I
+            specialize in HTML, CSS, and JavaScript, and have worked on various
+            projects, including e-commerce websites, systems, and portfolios.
+            I'm skilled in responsive web development, mobile app development,
+            and system analysis. I'm also proficient in frontend frameworks like
+            React.
+          </p>
+          <p>
+            In addition, I have experience with the MERN stack, which includes
+            Express.js, Node.js, React and MongoDB. I've used these technologies to
+            build full-stack applications and understand how they work with
+            frontend frameworks like React.
+          </p>
+          <p>
+            I have practical knowledge gained from internships at Addis Ababa
+            University’s Digital Library, Prodigy InfoTech, and FinServ
+            Technology Solution. I'm always keeping up with the latest
+            advancements in programming and eager to contribute and grow with
+            your team.
           </p>
         </div>
       </div>

@@ -25,6 +25,18 @@ const Networking = [
     title: "And Other Fundamentals of Computer Networks",
     lebel: "",
   },
+  {
+    id: 5,
+    icon: <BsFillPatchCheckFill className="experience__details-icon" />,
+    title: "System Analysis",
+    lebel: "Intermediate",
+  },
+  {
+    id: 6,
+    icon: <BsFillPatchCheckFill className="experience__details-icon" />,
+    title: "System Development",
+    lebel: "Intermediate",
+  },
 ];
 
 export default Networking;

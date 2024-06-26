@@ -8,6 +8,8 @@ import IMG7 from "../../assets/chat_img.jpg";
 import IMG8 from "../../assets/login_regiter.PNG";
 import IMG9 from "../../assets/pro-img-5.PNG";
 import IMG10 from "../../assets/myres.PNG";
+import IMG11 from "../../assets/eye-ms.PNG";
+import IMG12 from "../../assets/news-ms.PNG";
 
 const Data = [
   {
@@ -97,6 +99,26 @@ const Data = [
     btnName: "Github",
     link: "https://abiye-resume.netlify.app/",
     linkName: "Visit",
+  },
+  {
+    id: 10,
+    image: IMG11,
+    title: "Eye Bank Management System",
+    tech: " React || MongoDb || Express || NodeJS || Tailwind",
+    source: "https://github.com/Abe-Tiz/Eyebank-managemt-system",
+    btnName: "Github",
+    // link: "",
+    // linkName: "Visit",
+  },
+  {
+    id: 11,
+    image: IMG12,
+    title: "Notice Board and Task Assagniment",
+    tech: " React || MongoDb || Express || NodeJS || Tailwind",
+    source: "https://github.com/Abe-Tiz/Notic_Board-SIS",
+    btnName: "Github",
+    // link: "",
+    // linkName: "Visit",
   },
 ];
 
