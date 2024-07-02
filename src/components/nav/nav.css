@@ -1,6 +1,6 @@
 nav{
     background: var(--color-bg);
-    background-image: url(../../assets/climpek2.jpg);
+    /* background-image: url(../../assets/climpek2.jpg); */
     width: 100%;
     display: flex;
     flex-direction: row;
