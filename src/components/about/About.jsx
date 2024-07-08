@@ -6,6 +6,7 @@ import {BsBookmarkStar, BsFillPatchCheckFill} from 'react-icons/bs'
 import {TfiWorld} from 'react-icons/tfi'
 // import { BsFillPatchCheckFill } from 'react-icons/bs';
 
+
 const About = () => {
   return (
     <section id="about">

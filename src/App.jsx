@@ -18,7 +18,7 @@ const App = () => {
       <Myprojects />
       <Contacts />
       <Footer />
-
+      
       {/* toaster for alerting message: */}
       <Toaster
         position="top-center"

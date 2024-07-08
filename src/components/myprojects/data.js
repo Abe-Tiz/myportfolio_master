@@ -45,7 +45,7 @@ const Data = [
     tech: " React Js",
     source: "https://github.com/Abe-Tiz/PRODIGY_WD_05",
     btnName: "Github",
-    link: "https://abiyetodoapp.netlify.app/",
+    link: "https://wezerapp.netlify.app/",
     linkName: "Visit",
   },
   {

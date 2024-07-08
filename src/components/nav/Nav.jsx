@@ -9,6 +9,7 @@ const Nav = () => {
   const [showNav, setShowNav] = useState(false);
   const [isSticky, setSticky] = useState(false);
 
+
   useEffect(() => {
     const handleScroll = () => {
       const offSet = window.scrollY;
@@ -26,53 +27,56 @@ const Nav = () => {
     setActiveNav(navItem);
     setShowNav(!showNav);
   };
-
+  
+  
   return (
-    <nav className={`container ${isSticky ? "sticky" : ""}`}>
-      <a href="#home" className="logo">
-        <img src={logo} alt="logo" />
-      </a>
-      <button className="toggler" onClick={() => setShowNav(!showNav)}>
-        {showNav ? <AiOutlineClose /> : <AiOutlineMenu />}
-      </button>
-      <div className={`nav-items ${showNav ? "show" : ""}`}>
-        <a
-          href="#home"
-          onClick={() => handleNavClick("#")}
-          className={activeNav === "#" ? "active" : ""}
-        >
-          Home
+    <>
+      <nav className={`container ${isSticky ? "sticky" : ""}`}>
+        <a href="#home" className="logo">
+          <img src={logo} alt="logo" />
         </a>
-        <a
-          href="#about"
-          onClick={() => handleNavClick("#about")}
-          className={activeNav === "#about" ? "active" : ""}
-        >
-          About
-        </a>
-        <a
-          href="#experience"
-          onClick={() => handleNavClick("#experience")}
-          className={activeNav === "#experience" ? "active" : ""}
-        >
-          Skill
-        </a>
-        <a
-          href="#myprojects"
-          onClick={() => handleNavClick("#myprojects")}
-          className={activeNav === "#myprojects" ? "active" : ""}
-        >
-          Project
-        </a>
-        <a
-          href="#contacts"
-          onClick={() => handleNavClick("#contacts")}
-          className={activeNav === "#contacts" ? "active" : "link"}
-        >
-          Contact
-        </a>
-      </div>
-    </nav>
+        <button className="toggler" onClick={() => setShowNav(!showNav)}>
+          {showNav ? <AiOutlineClose /> : <AiOutlineMenu />}
+        </button>
+        <div className={`nav-items ${showNav ? "show" : ""}`}>
+          <a
+            href="#home"
+            onClick={() => handleNavClick("#")}
+            className={activeNav === "#" ? "active" : ""}
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            onClick={() => handleNavClick("#about")}
+            className={activeNav === "#about" ? "active" : ""}
+          >
+            About
+          </a>
+          <a
+            href="#experience"
+            onClick={() => handleNavClick("#experience")}
+            className={activeNav === "#experience" ? "active" : ""}
+          >
+            Skill
+          </a>
+          <a
+            href="#myprojects"
+            onClick={() => handleNavClick("#myprojects")}
+            className={activeNav === "#myprojects" ? "active" : ""}
+          >
+            Project
+          </a>
+          <a
+            href="#contacts"
+            onClick={() => handleNavClick("#contacts")}
+            className={activeNav === "#contacts" ? "active" : "link"}
+          >
+            Contact
+          </a>
+        </div>
+      </nav>
+    </>
   );
 };
 
