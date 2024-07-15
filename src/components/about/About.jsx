@@ -34,10 +34,10 @@ const About = () => {
             <article className="about__card">
               <BsBookmarkStar className="about__icon" />
               <h5> Projects</h5>
-              <small>12+</small>
+              <small>20+</small>
             </article>
 
-            <article className="about__card">
+            <article clasName="about__card">
               <TfiWorld className="about__icon" />
               <h5>Domains</h5>
               <small>
@@ -75,7 +75,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            Hello! I'm a frontend developer with internship experience. I
+            Hello! I'm a web and software developer with internship experience. I
             specialize in HTML, CSS, and JavaScript, and have worked on various
             projects, including e-commerce websites, systems, and portfolios.
             I'm skilled in responsive web development, mobile app development,
